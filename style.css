@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body canvas {
+  background: lightblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body input {
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 5vh;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 1rem;
+  z-index: 100;
+  background-color: whitesmoke;
+  border: 1px solid blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.pagedir {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  
+}
+
+.pagedir p {
+  position: absolute;
+  top: 11vh;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 20;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+button {
+  position: absolute;
+  bottom: 1vh;
+  right: 1vw;
+  background: lightblue;
+  border: 2px solid black;
+  border-radius: 2rem;
+  box-shadow: 2px 2px darkgray;
+  padding: 1rem;
+  min-width: 180px;
+  z-index: 20;
+}
+button a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+}
+button:hover {
+  background: aqua;
+  box-shadow: 3px 3px darkgray;
+  
+}
+
+
+footer {
+  background-color: whitesmoke;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  padding: 1%;
+  border-top: 2px solid black;
+}
+
+footer img {
+  height: 35px;
+  width: 35px;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 200;
+}
