@@ -81,14 +81,14 @@ window.addEventListener('load', function(){
         wrapText(text){
             //canvas settings
             const gradient = this.context.createLinearGradient(0, 0, this.canvasWidth, this.canvasHeight);
-            gradient.addColorStop(0.3, 'blue');
-            gradient.addColorStop(0.5, 'darkorchid');
-            gradient.addColorStop(0.7, 'blue');
+            gradient.addColorStop(0.2, 'aqua');
+            gradient.addColorStop(0.5, 'blue');
+            gradient.addColorStop(0.7, 'aqua');
             this.context.fillStyle = gradient;
             this.context.textAlign = 'center';
             this.context.textBaseLine = 'middle';
             this.context.lineWidth = 3;
-            this.context.strokeStyle = 'whitesmoke';
+            this.context.strokeStyle = 'black';
             this.context.font = this.fontsize + 'px impact';
             
             //break multiple lines
