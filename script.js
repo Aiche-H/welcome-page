@@ -54,16 +54,16 @@ window.addEventListener('load', function(){
             this.canvasHeight = canvasHeight;
             this.textX = this.canvasWidth / 2;
             this.textY = this.canvasHeight / 2;
-            this.fontsize = window.innerHeight * 0.2;
+            this.fontsize = window.innerWidth * 0.2;
             this.lineHeight = this.fontsize * 0.9;
             this.maxTextWidth = this.canvasWidth * 0.9;
             this.textInput = document.getElementById('textInput');
-            this.textInput.addEventListener('keyup', (e) => {
+            /*this.textInput.addEventListener('keyup', (e) => {
                 if (e.key !== ' ') {
                 this.context.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
                 this.wrapText(e.target.value);
                 }
-            });
+            });*/
             //particle text
             this.particles = [];
             this.gap = 3;

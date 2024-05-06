@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body canvas {
   background: lightblue;
   position: absolute;
@@ -21,29 +22,15 @@ body input {
   background-color: whitesmoke;
   border: 1px solid blue;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.pagedir {
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-  
-}
-
-.pagedir p {
-  position: absolute;
-  top: 11vh;
-  color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 20;
-  font-size: 16px;
-  text-decoration: underline;
+  display: none;
 }
 
 button {
   position: absolute;
-  bottom: 10px;
-  right: 1vw;
+  left: 50%;
+  top: 70%;
+  transform: translateY(-80%);
+  transform: translateX(-50%);
   background: lightblue;
   border: 2px solid black;
   border-radius: 2rem;
@@ -62,27 +49,4 @@ button:hover {
   background: aqua;
   box-shadow: 3px 3px darkgray;
   
-}
-
-
-footer {
-  background-color: whitesmoke;
-  height: 85px;
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-  padding: 1%;
-  border-top: 2px solid black;
-}
-
-footer img {
-  height: 35px;
-  width: 35px;
-}
-
-footer p {
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 200;
 }
