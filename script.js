@@ -66,7 +66,7 @@ window.addEventListener('load', function(){
             });*/
             //particle text
             this.particles = [];
-            this.gap = 3;
+            this.gap = 5;
             this.mouse = {
                 radius : 15000,
                 x: 0,
