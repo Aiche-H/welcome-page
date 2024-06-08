@@ -88,7 +88,7 @@ window.addEventListener('load', function(){
             this.context.textAlign = 'center';
             this.context.textBaseLine = 'middle';
             this.context.lineWidth = 3;
-            this.context.strokeStyle = 'black';
+            this.context.strokeStyle = '';
             this.context.font = this.fontsize + 'px impact';
             
             //break multiple lines

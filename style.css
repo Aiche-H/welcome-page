@@ -5,7 +5,7 @@
 }
 
 body canvas {
-  background: lightblue;
+  background: #060508;
   position: absolute;
   top: 0;
   left: 0;
@@ -27,44 +27,45 @@ body input {
 
 button {
   position: absolute;
+  bottom: 100px;
   left: 50%;
-  top: 70%;
-  transform: translateY(-80%);
   transform: translateX(-50%);
   background: transparent;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
+  border: 2px solid #2BF0F4;
+  border-radius: 15px;
   padding: 1rem;
   min-width: 180px;
   z-index: 20;
+  
 }
 button a {
   text-decoration: none;
   font-size: 1.3rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: black;
+  color: #E8FFFE;
 }
 button:hover {
-  animation: grow 2s linear;
-  animation-fill-mode: forwards;
+  animation: shadow 2s linear alternate forwards;
 }
 
-@keyframes grow {
+button a :hover {
+  color: #2BF0F4;
+}
+
+@keyframes shadow {
   0% {
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-  }
-  50% {
-    border-top: 2px solid darkgray;
-    border-bottom: 2px solid darkgray;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  100% {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 0px 0px rgba(20, 152, 230, 1);
   }
 
+  30%{
+    box-shadow: 0px 0px 15px 0px rgba(20, 152, 230, 1);
+  }
+
+  70% {
+    box-shadow: 0px 0px 25px 0px rgba(20, 152, 230, 1);
+  }
+
+  100% {
+    box-shadow: 0px 0px 35px 0px rgba(20, 152, 230, 1);
+  }
 }
