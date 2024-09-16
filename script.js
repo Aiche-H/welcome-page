@@ -58,13 +58,6 @@ window.addEventListener('load', function(){
             this.lineHeight = this.fontsize * 0.9;
             this.maxTextWidth = this.canvasWidth * 0.9;
             this.textInput = document.getElementById('textInput');
-            /*this.textInput.addEventListener('keyup', (e) => {
-                if (e.key !== ' ') {
-                this.context.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
-                this.wrapText(e.target.value);
-                }
-            });*/
-            //particle text
             this.particles = [];
             this.gap = 5;
             this.mouse = {
